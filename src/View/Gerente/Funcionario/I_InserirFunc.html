@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Inserir Funcionário</title>
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/Gerente.css">
+    </head>
+
+    <body>
+        <div id="interface">
+            <div id="retangulo" class="amarelo"> <div id="texto1">Inserir</div> <div id="texto2"><a href="../I_HomeGerente.html">Voltar</a></div></div>
+            <form action="../../../Controller/CRUDFuncionario/inserirFuncionario.php" method="POST">
+            
+                <div id="fundoIserir">
+                    <h1 class="funcionarioText">Inserir Funcionário</h1>
+            
+                    <input type="text" name="nome" placeholder="Nome">
+                    <input type="text" name="cpf" placeholder="CPF">
+                    <input type="text" name="salario" placeholder="Salário">
+                    <input type="text" name="endereco" placeholder="Endereço">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="telefone" placeholder="Telefone">
+                    <input type="password" name="senha" placeholder="Senha">
+
+                    <div id="botao">
+                        <input type="submit" value="Inserir" class="botaoEnviar amareloClaro">
+                    </div>
+                </div>
+
+
+
+            </form>
+        </div>
+    </body>
+</html>

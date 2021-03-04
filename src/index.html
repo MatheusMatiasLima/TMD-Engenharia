@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="View/css/index.css">
+        <link rel="stylesheet" href="View/css/style.css">
+        <title>Login</title>
+        <meta charset="UTF-8">
+
+    </head>
+
+    <body>
+        <div id='interface' >
+            <div id='retangulo' class='roxo'></div>
+            
+            <div id='fundoEsquerdo'>
+                <h1>Retro Waves</h1>
+                    <p class="textoDescricao">
+                        Este é o sistema web Retro Wave® para a subsidiária da rede RetroVibes™.
+                    </p>
+                    <p class="textoDescricao">
+                        A RetroVibes™ é reconhecida por trabalhar com grandes empresas. Com um canal de comunicação direto com vários desenvolvedores e estúdios ela consegue garantir jogos clássicos adaptados as necessidades do mundo moderno.
+                    </p>
+
+            </div>
+
+            <div id='fundoDireita'>
+                <form action="Controller/index.php" method="POST">
+
+                    <h1>Login</h1>
+                    <input type="text" name="cpf" placeholder='CPF' required> <br>
+
+                    <input type="password" name="senha" placeholder='Senha'required> <br>
+
+
+                    <label class="container"> Gerente 
+                    <input type="radio" name="funcao" checked="checked" value="gerente">
+                    <span class="checkmark" ></span>
+                    </label>
+
+                    <label class="container"> Funcionario 
+                        <input type="radio" name="funcao" value="funcionario">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container"> Cliente 
+                        <input type="radio" name="funcao" value="cliente">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <div id="botao">
+                        <input  type="submit" name="login" value="Login" class="botaoEnviar roxo">
+                    </div>
+                </form>
+                
+            </div>
+            <footer>Desensolvido por TMD-Engenharia</footer>
+        </div>
+    </body>
+
+</html>

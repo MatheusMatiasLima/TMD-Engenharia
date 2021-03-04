@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Adicionar Locação</title>
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/Funcionario.css">
+    </head>
+
+    <body>
+        <div id="interface">
+            <div id="retangulo" class="vermelho"> <div id="texto1">Adicionar</div> <div id="texto2">Voltar</div></div>
+            <div id="fundoIserir">
+                <form action="../../../Controller/CRUDLocacao/inserirLocacao.php" method="POST">
+                    <h1>Adicionar Locação</h1>
+                    
+                    <input type="date" class="corData" name="dataLocacao" placeholder=" Data de locação Ex:1999-01-01">
+                    <input type="date" class="corData" name="dataDevolucao" placeholder="Data de devolução Ex:1999-01-01">
+                    <input type="text" name="R$" placeholder="R$ Ex:10.00">
+                    <input type="text" name="funcionario" placeholder="ID do funcionário">
+                    <input type="text" name="cliente" placeholder="ID do cliente">
+                    <input type="text" name="plataforma" placeholder="ID do produto">    
+
+                    <div id="botao">
+                        <input type="submit" value="Adicionar" class="botaoEnviar vermelhoClaro">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
